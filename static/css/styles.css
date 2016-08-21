@@ -1,0 +1,97 @@
+html {
+  background-color: #46A; }
+
+body {
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+header .mdl-layout__header-row {
+  padding: 0 40px; }
+  header .mdl-layout__header-row .mdl-layout-title a {
+    text-decoration: none;
+    color: #FFF; }
+
+main.mdl-grid {
+  padding: 0; }
+
+#sidebar {
+  margin: 0; }
+  #sidebar .mdl-card {
+    margin: 0 0 20px 24px;
+    width: calc(100% - 32px); }
+    #sidebar .mdl-card .mdl-card__title {
+      background: url("https://pbs.twimg.com/profile_banners/183939271/1467198681") center/cover; }
+      #sidebar .mdl-card .mdl-card__title .avator {
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        margin: 60px auto -60px;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 50%;
+        background-image: url(https://aboutme.imgix.net/background/users/s/k/2/sk2_1467867173_69.jpg?w=150&amp;h=150&amp;q=40&amp;dpr=2&amp;auto=format&amp;fit=max&amp;rect=0,0,276,276);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; }
+    #sidebar .mdl-card .mdl-card__supporting-text {
+      position: absolute;
+      bottom: 4px;
+      width: auto; }
+    #sidebar .mdl-card ul.mdl-card__actions {
+      margin: 0;
+      border: none;
+      text-align: right; }
+      #sidebar .mdl-card ul.mdl-card__actions li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px; }
+        #sidebar .mdl-card ul.mdl-card__actions li .icon svg {
+          width: 32px;
+          height: 32px;
+          vertical-align: middle; }
+        #sidebar .mdl-card ul.mdl-card__actions li .icon svg.icon-feed {
+          width: 26px;
+          height: 26px; }
+
+@media screen and (min-width: 840px) {
+  #sidebar .mdl-card {
+    position: fixed;
+    width: 35%;
+    margin: 0 0 0 40px; }
+    #sidebar .mdl-card .mdl-card__title .avator {
+      width: 150px;
+      height: 150px;
+      margin: 160px auto -60px; }
+    #sidebar .mdl-card .mdl-card__supporting-text {
+      position: relative;
+      width: auto;
+      margin: 45px auto 0; }
+    #sidebar .mdl-card .mdl-card__actions.mdl-card--border {
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); } }
+#contents {
+  margin-top: -16px; }
+
+#single {
+  margin: 0; }
+  #single .mdl-card {
+    margin: 0 auto 40px auto;
+    padding: 40px; }
+    #single .mdl-card pre {
+      overflow-x: scroll;
+      max-width: 300px; }
+
+/*# sourceMappingURL=styles.css.map */

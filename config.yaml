@@ -1,0 +1,16 @@
+contentdir: content
+layoutdir: layouts
+publishdir: docs
+builddrafts: false
+baseurl: http://4ki2.github.io/blog/
+canonifyurls: true
+hasCJKLanguage: true
+
+languageCode: ja
+title: 式々の開発ログ
+
+params:
+  description: 式々の開発ログ
+  socials:
+    twitter: 4ki2
+    github: 4ki2

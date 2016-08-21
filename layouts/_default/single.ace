@@ -1,0 +1,14 @@
+= doctype html
+html lang="{{ .Site.LanguageCode }}"
+  head
+    {{ partial "head" . }}
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      {{ partial "header" . }}
+      main.mdl-grid.mdl-layout__content
+        #single.mdl-cell.mdl-cell--12-col.mdl-cell--12-col-tablet
+          .mdl-cell.mdl-cell--8-col.mdl-card.mdl-shadow--4dp
+            h1
+              {{ .Title }}
+            {{ .Content }}
+    script src="https://code.getmdl.io/1.2.0/material.min.js" type="text/javascript"

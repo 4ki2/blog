@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="ja"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><meta name="description" content="式々の開発ログ"><title>GoogleサイトからS3へ | 式々の開発ログ</title><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium"><link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue_grey-deep_purple.min.css"><link rel="stylesheet" href="http://4ki2.github.io/blog/css/styles.css"><link rel="canonical" href="http://4ki2.github.io/blog/"><link rel="alternate" type="application/rss+xml" title="式々の開発ログ" href=""></head><body><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"><header class="mdl-layout__header mdl-layout__header--transparent"><div class="mdl-layout__header-row"><div class="mdl-layout-icon"></div><div class="mdl-layout-title"><a href="http://4ki2.github.io/blog/">式々の開発ログ</a></div><div class="mdl-layout-spacer"></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"><label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp"><i class="material-icons">search</i></label><div class="mdl-textfield__expandable-holder"><input id="fixed-header-drawer-exp" class="mdl-textfield__input" type="text" name="sample"></div></div></div></header><main class="mdl-grid mdl-layout__content"><div id="single" class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet"><div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp"><h1>GoogleサイトからS3へ</h1>
+
+<p>あれこれ片付けたい。</p>
+
+<ul>
+<li>dotfilesの整理
+
+<ul>
+<li>[ ] zshrc見直し</li>
+<li>[ ] vimrc見直し</li>
+<li>[ ] tmux見直し</li>
+</ul></li>
+<li>github pagesの活用
+
+<ul>
+<li>[ ] UI改修</li>
+</ul></li>
+<li>ローカル掃除
+
+<ul>
+<li>[ ] gistへ退避</li>
+</ul></li>
+<li>サイトの掃除
+
+<ul>
+<li>[x] Googleサイト移行</li>
+</ul></li>
+</ul>
+
+<h2 id="googleサイト">Googleサイト</h2>
+
+<p>無料appsで運用中のドメインで
+複数人のITリテラシ低い編集者がいる前提で作ったgoogleサイト。</p>
+
+<ul>
+<li>編集する人が実はいない</li>
+<li>記述が特殊</li>
+<li>静的ページしかない</li>
+</ul>
+
+<p>ので書き直してしまった。
+進歩ないけどrails+slim。</p>
+
+<h2 id="heroku">heroku</h2>
+
+<p>あとはherokuにpushしてお仕舞いなんだけど、
+今年、iPhone替えた時に迂闊にも2段階認証を無効にするのを忘れていて、
+このアカウントからはログインできなくなってしまった。
+拙い英語で問い合わせてみたが、</p>
+
+<blockquote>
+<p>I&rsquo;m afraid that I did nor supply a URL. You will need to provide this information:</p>
+
+<p>Last 4 digits from your credit card on file
+Name of app most recently deployed on your account
+The Git SHA of the last commit deployed and the date of the deployment
+If you can&rsquo;t provide this information then we will be unable to disable 2fa for your account.</p>
+</blockquote>
+
+<p>カード登録してないただの無料ユーザーなんで諦めました。
+新しいアカウント作れば済む話だけど、heroku以外を探してみること。</p>
+
+<h2 id="s3">S3</h2>
+
+<p>rails使える無料のpaas、海外のホストしか見つからなくて、
+国内の限られた人すら見てるか分からない静的サイトだし、
+DNSはroute53だしってことでS3にしてしまった。</p>
+</div></div></main></div><script src="https://code.getmdl.io/1.2.0/material.min.js" type="text/javascript"></script></body></html>

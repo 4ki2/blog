@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/</loc>
+    <lastmod>2016-08-21T20:15:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/hugo-ace/</loc>
+    <lastmod>2016-08-21T20:15:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/jekyll-assets/</loc>
+    <lastmod>2016-08-20T20:58:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/static-page-site/</loc>
+    <lastmod>2016-08-15T01:23:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/github-pages-ui/</loc>
+    <lastmod>2016-08-13T12:39:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/editing-dotfiles/</loc>
+    <lastmod>2016-08-12T18:17:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://4ki2.github.io/blog/summer-is-over/</loc>
+    <lastmod>2016-08-11T23:52:48+09:00</lastmod>
+  </url>
+  
+</urlset>

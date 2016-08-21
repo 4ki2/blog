@@ -1,0 +1,49 @@
+---
+date:   2016-08-15 01:23:38 +09:00
+title:  GoogleサイトからS3へ
+---
+あれこれ片付けたい。
+
+- dotfilesの整理
+  - [ ] zshrc見直し
+  - [ ] vimrc見直し
+  - [ ] tmux見直し
+- github pagesの活用
+  - [ ] UI改修
+- ローカル掃除
+  - [ ] gistへ退避
+- サイトの掃除
+  - [x] Googleサイト移行
+
+## Googleサイト
+無料appsで運用中のドメインで
+複数人のITリテラシ低い編集者がいる前提で作ったgoogleサイト。
+
+- 編集する人が実はいない
+- 記述が特殊
+- 静的ページしかない
+
+ので書き直してしまった。
+進歩ないけどrails+slim。
+
+## heroku
+あとはherokuにpushしてお仕舞いなんだけど、
+今年、iPhone替えた時に迂闊にも2段階認証を無効にするのを忘れていて、
+このアカウントからはログインできなくなってしまった。
+拙い英語で問い合わせてみたが、
+
+> I'm afraid that I did nor supply a URL. You will need to provide this information:
+>
+> Last 4 digits from your credit card on file
+> Name of app most recently deployed on your account
+> The Git SHA of the last commit deployed and the date of the deployment
+> If you can't provide this information then we will be unable to disable 2fa for your account.
+
+カード登録してないただの無料ユーザーなんで諦めました。
+新しいアカウント作れば済む話だけど、heroku以外を探してみること。
+
+## S3
+rails使える無料のpaas、海外のホストしか見つからなくて、
+国内の限られた人すら見てるか分からない静的サイトだし、
+DNSはroute53だしってことでS3にしてしまった。
+

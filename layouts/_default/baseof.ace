@@ -1,0 +1,13 @@
+= doctype html
+html lang="{{ .Site.LanguageCode }}"
+  head
+    {{ partial "head" . }}
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      {{ partial "header" . }}
+      main.mdl-grid.mdl-layout__content
+        #sidebar.mdl-cell.mdl-cell--5-col.mdl-cell--12-col-tablet
+          {{ partial "sidebar" . }}
+        #contents.mdl-grid.mdl-cell.mdl-cell--7-col.mdl-cell--12-col-tablet
+          = yield main
+    script src="https://code.getmdl.io/1.2.0/material.min.js" type="text/javascript"

@@ -1,0 +1,32 @@
+---
+date:   2016-08-12 18:17:32 +09:00
+title:  dotfiles分割
+---
+あれこれ片付けたい。
+
+- dotfilesの整理
+  - [ ] zshrc見直し
+  - [ ] vimrc見直し
+  - [ ] tmux見直し
+- github pagesの活用
+  - [x] UI改修
+- ローカル掃除
+  - [ ] gistへ退避
+
+## dotfiles
+分割した。見通し良くなって嬉しい。
+中身の見直しはやっぱりvimからだろうか？
+うまく使えてない機能とかあるし。
+neovimは敷居高い気がするので先送りする予定。
+
+## gist
+ローカルの散文的なのはgistに投げ込む方針にした。基本的にpublicの予定。  
+https://github.com/defunkt/gist
+
+このアカウントで初めてgist開いたら、知らないファイルがあってちょっとびっくり。
+fiddleとeventmachineで遊んでた時にqiitaに投稿したコードの模様。
+
+## サイトの掃除
+awsやherokuのサイトはこの1年でほぼ整理したというかクローズしたのでやることはあまりなかった。
+herokuからgooleサイトへ移したサイトのドメイン名AレコードがS3だったのを失念しててS3から削除してたのを修正した。  
+http://hacknote.jp/archives/17094/
