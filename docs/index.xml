@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>式々の開発ログ</title>
-    <link>http://4ki2.github.io/blog/</link>
+    <link>https://4ki2.github.io/blog/</link>
     <description>Recent content on 式々の開発ログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 21 Aug 2016 20:15:20 +0900</lastBuildDate>
-    <atom:link href="http://4ki2.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://4ki2.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugo &#43; Ace</title>
-      <link>http://4ki2.github.io/blog/hugo-ace/</link>
+      <link>https://4ki2.github.io/blog/hugo-ace/</link>
       <pubDate>Sun, 21 Aug 2016 20:15:20 +0900</pubDate>
       
-      <guid>http://4ki2.github.io/blog/hugo-ace/</guid>
+      <guid>https://4ki2.github.io/blog/hugo-ace/</guid>
       <description>
 
 &lt;p&gt;時間なくなっちゃったのでいろいろ中途半端。
@@ -50,10 +50,10 @@ vimのプラグインもあった。
     
     <item>
       <title>jekyll-assets</title>
-      <link>http://4ki2.github.io/blog/jekyll-assets/</link>
+      <link>https://4ki2.github.io/blog/jekyll-assets/</link>
       <pubDate>Sat, 20 Aug 2016 20:58:58 +0900</pubDate>
       
-      <guid>http://4ki2.github.io/blog/jekyll-assets/</guid>
+      <guid>https://4ki2.github.io/blog/jekyll-assets/</guid>
       <description>
 
 &lt;p&gt;あんまり片付いてない。&lt;/p&gt;
@@ -112,10 +112,10 @@ The tag `asset_path` on line 10 in `_includes/head.html,` is not a recognized Li
     
     <item>
       <title>GoogleサイトからS3へ</title>
-      <link>http://4ki2.github.io/blog/static-page-site/</link>
+      <link>https://4ki2.github.io/blog/static-page-site/</link>
       <pubDate>Mon, 15 Aug 2016 01:23:38 +0900</pubDate>
       
-      <guid>http://4ki2.github.io/blog/static-page-site/</guid>
+      <guid>https://4ki2.github.io/blog/static-page-site/</guid>
       <description>
 
 &lt;p&gt;あれこれ片付けたい。&lt;/p&gt;
@@ -188,10 +188,10 @@ DNSはroute53だしってことでS3にしてしまった。&lt;/p&gt;
     
     <item>
       <title>Material Design Liteを使ってみた</title>
-      <link>http://4ki2.github.io/blog/github-pages-ui/</link>
+      <link>https://4ki2.github.io/blog/github-pages-ui/</link>
       <pubDate>Sat, 13 Aug 2016 12:39:32 +0900</pubDate>
       
-      <guid>http://4ki2.github.io/blog/github-pages-ui/</guid>
+      <guid>https://4ki2.github.io/blog/github-pages-ui/</guid>
       <description>
 
 &lt;p&gt;あれこれ片付けたい。&lt;/p&gt;
@@ -243,10 +243,10 @@ DNSはroute53だしってことでS3にしてしまった。&lt;/p&gt;
     
     <item>
       <title>dotfiles分割</title>
-      <link>http://4ki2.github.io/blog/editing-dotfiles/</link>
+      <link>https://4ki2.github.io/blog/editing-dotfiles/</link>
       <pubDate>Fri, 12 Aug 2016 18:17:32 +0900</pubDate>
       
-      <guid>http://4ki2.github.io/blog/editing-dotfiles/</guid>
+      <guid>https://4ki2.github.io/blog/editing-dotfiles/</guid>
       <description>
 
 &lt;p&gt;あれこれ片付けたい。&lt;/p&gt;
@@ -296,10 +296,10 @@ herokuからgooleサイトへ移したサイトのドメイン名Aレコード�
     
     <item>
       <title>jekyllを使ってみる</title>
-      <link>http://4ki2.github.io/blog/summer-is-over/</link>
+      <link>https://4ki2.github.io/blog/summer-is-over/</link>
       <pubDate>Thu, 11 Aug 2016 23:52:48 +0900</pubDate>
       
-      <guid>http://4ki2.github.io/blog/summer-is-over/</guid>
+      <guid>https://4ki2.github.io/blog/summer-is-over/</guid>
       <description>
 
 &lt;p&gt;あれこれ片付けたい。&lt;/p&gt;

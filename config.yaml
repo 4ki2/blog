@@ -2,7 +2,7 @@ contentdir: content
 layoutdir: layouts
 publishdir: docs
 builddrafts: false
-baseurl: http://4ki2.github.io/blog/
+baseurl: https://4ki2.github.io/blog/
 canonifyurls: true
 hasCJKLanguage: true
 
