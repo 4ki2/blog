@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jekyll-assets | 4ki2の開発メモ</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="開発環境やら趣味のコードを片付け中。">
+    <!--before-resource-hints--><link rel="preload" href="/blog/assets/css/0.styles.2e123729.css" as="style"><link rel="preload" href="/blog/assets/js/app.956a045b.js" as="script"><link rel="preload" href="/blog/assets/js/7.b4eebdb2.js" as="script"><link rel="preload" href="/blog/assets/js/1.b443d49a.js" as="script"><link rel="preload" href="/blog/assets/js/14.38ce3122.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.37c1fd7c.js"><link rel="prefetch" href="/blog/assets/js/11.e3a6f9cc.js"><link rel="prefetch" href="/blog/assets/js/12.34d84a83.js"><link rel="prefetch" href="/blog/assets/js/13.5ed170db.js"><link rel="prefetch" href="/blog/assets/js/15.7297c6c6.js"><link rel="prefetch" href="/blog/assets/js/16.5ca0dc4d.js"><link rel="prefetch" href="/blog/assets/js/2.70a86519.js"><link rel="prefetch" href="/blog/assets/js/5.cb2eb1f2.js"><link rel="prefetch" href="/blog/assets/js/6.dc8a8231.js"><link rel="prefetch" href="/blog/assets/js/8.bb558b5c.js"><link rel="prefetch" href="/blog/assets/js/9.a974e01d.js"><link rel="prefetch" href="/blog/assets/js/vuejs-paginate.3571fb33.js"><!--after-resource-hints-->
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.2e123729.css">
+  </head>
+  <body>
+    <!--before-vue-ssr-outlet--><div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">4ki2の開発メモ</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        jekyll-assets
+      </h1> <div class="post-meta"><!----> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2016-08-20T11:58:58.000Z">
+      2016年08月20日 08:58:58
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-36165b9c><a href="/blog/tag/jekyll" data-v-36165b9c><span data-v-36165b9c>jekyll</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><p>あんまり片付いてない。</p> <ul><li>dotfilesの整理
+<ul><li>[ ] zshrc見直し</li> <li>[ ] vimrc見直し</li> <li>[ ] tmux見直し</li></ul></li> <li>github pagesの活用
+<ul><li>[x] jekyll見直し</li> <li>[ ] UI改修</li></ul></li> <li>ローカル掃除
+<ul><li>[ ] gistへ退避</li></ul></li></ul> <h2 id="jekyll-assets"><a href="#jekyll-assets" class="header-anchor">#</a> jekyll-assets</h2> <p>slimの導入を試みたけど、jekyll3は素直に使えなそう。
+issueから辿って動かなそうなjekyll3-slimを試したけどやはり動かず。</p> <p>https://github.com/slim-template/jekyll-slim/issues/4</p> <p>もやもやしながらmiddlemanとかoctpressとかhugoとか調べつつ、
+jekyll-assetsを組み込んでいたら、</p> <p>こんな記事を見つけて、</p> <p>https://github.com/blog/2228-simpler-github-pages-publishing</p> <p>こんな仕様だそうなので、</p> <p>https://help.github.com/articles/user-organization-and-project-pages/</p> <p>blogってリポジトリ作ってhugo+aceでやりたいことできそう。</p> <p>https://gohugo.io/
+https://github.com/yosssi/ace</p> <p>とりあえずjekyll-assets入れたしpushして今日は終わり。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[4ki2/4ki2.github.io] Page build failure
+The page build failed with the following error:
+
+The tag `asset_path` on line 10 in `_includes/head.html,` is not a recognized Liquid tag. For more information, see https://help.github.com/articles/page-build-failed-unknown-tag-error.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>あわわ...jekyll-assets除外してcommit。徒労感が。。。</p></div> <footer><div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/2016/08/14/_1/" class="prev">
+        GoogleサイトからS3へ
+      </a></span> <span class="next"><a href="/blog/2016/08/21/_1/">
+        Hugo + Ace
+      </a>
+      →
+    </span></p></div></footer></article></div><div class="global-ui"></div></div><!--after-vue-ssr-outlet-->
+    <!--before-scripts--><script src="/blog/assets/js/app.956a045b.js" defer></script><script src="/blog/assets/js/7.b4eebdb2.js" defer></script><script src="/blog/assets/js/1.b443d49a.js" defer></script><script src="/blog/assets/js/14.38ce3122.js" defer></script><!--after-scripts-->
+  </body>
+</html>

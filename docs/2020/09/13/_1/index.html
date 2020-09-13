@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>hugoからvuepressへ | 4ki2の開発メモ</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="半日だろと思ったけど丸２日かかったブログ更新の話。">
+    <!--before-resource-hints--><link rel="preload" href="/blog/assets/css/0.styles.2e123729.css" as="style"><link rel="preload" href="/blog/assets/js/app.956a045b.js" as="script"><link rel="preload" href="/blog/assets/js/7.b4eebdb2.js" as="script"><link rel="preload" href="/blog/assets/js/1.b443d49a.js" as="script"><link rel="preload" href="/blog/assets/js/16.5ca0dc4d.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.37c1fd7c.js"><link rel="prefetch" href="/blog/assets/js/11.e3a6f9cc.js"><link rel="prefetch" href="/blog/assets/js/12.34d84a83.js"><link rel="prefetch" href="/blog/assets/js/13.5ed170db.js"><link rel="prefetch" href="/blog/assets/js/14.38ce3122.js"><link rel="prefetch" href="/blog/assets/js/15.7297c6c6.js"><link rel="prefetch" href="/blog/assets/js/2.70a86519.js"><link rel="prefetch" href="/blog/assets/js/5.cb2eb1f2.js"><link rel="prefetch" href="/blog/assets/js/6.dc8a8231.js"><link rel="prefetch" href="/blog/assets/js/8.bb558b5c.js"><link rel="prefetch" href="/blog/assets/js/9.a974e01d.js"><link rel="prefetch" href="/blog/assets/js/vuejs-paginate.3571fb33.js"><!--after-resource-hints-->
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.2e123729.css">
+  </head>
+  <body>
+    <!--before-vue-ssr-outlet--><div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">4ki2の開発メモ</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        hugoからvuepressへ
+      </h1> <div class="post-meta"><!----> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-09-13T17:08:28.000Z">
+      2020年09月14日 02:08:28
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-36165b9c><a href="/blog/tag/vuepress" data-v-36165b9c><span data-v-36165b9c>vuepress</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><p>4年前に<code>hugo</code>（v0.16）で作っただけの放置ブログを更新してみた。
+開発メモは検索が便利な<code>google keep</code>に残すようにしていたが、
+mdで書けないので見辛いのが気になっていたのと、
+フロント系の練習になるかな思ったのがきっかけ。</p> <p>hugoはmacbookと一緒になくなっていたので、
+新たに入れて（v0.74）みたがテーマ化されたからか動かなかった。
+意外に人気あって利用されてそうだけど、まだv0なの？って疑問から別の選択肢を探す。
+結局、<code>hugo</code>+<code>vue</code> で自前でいろいろ作るか、
+<code>vuepress</code>ってのを使ってみるか最後まで悩んだけど、
+短時間で済ませたいって理由で後者を選択。</p> <p>コマンド3回ぐらいでその後にmd整理するだけだよなぁとか軽い気持ちでいたが、全然違った。</p> <h2 id="プラグイン"><a href="#プラグイン" class="header-anchor">#</a> プラグイン</h2> <p>まず、何がデフォルトで有効なのか分からない。</p> <p>https://vuepress.github.io/</p> <p>もちろん初めて使うので何が何やらも分からない。
+先人がサンプルを公開してくれていたが、blogはスルーしたらしい。</p> <p>https://github.com/ozaki25/vuepress-plugins-sample</p> <p>とりあえずブログ機能は使いたいので追加する。</p> <p>https://vuepress-plugin-blog.ulivz.com/</p> <h2 id="テーマ"><a href="#テーマ" class="header-anchor">#</a> テーマ</h2> <p>継承できるっぽいので、自分で簡易なの作ろうとthemeにレイアウト1つ置くと起動しない。</p> <p>https://vuepress.vuejs.org/theme/inheritance.html#concepts</p> <p>別のドキュメントだと<code>Danger Zone</code>になってた。（しばらくしてから気付く）</p> <p>https://vuepress.vuejs.org/theme/option-api.html#plugins</p> <p>とりあえずブログ用のデフォルトテーマを使おうと入れてみる。</p> <p>https://vuepress-theme-blog.ulivz.com/</p> <p>が、動かない。プラグインの方のblogをremoveすると動いた。
+ローカルのmodulesが壊れてた感もあるけど、この時点で混乱してた。</p> <h2 id="theme-blog-のカスタマイズ"><a href="#theme-blog-のカスタマイズ" class="header-anchor">#</a> theme-blog のカスタマイズ</h2> <p>あれこれ把握する前に投げ出した。
+幸いにも<code>eject</code> というテーマをローカルに吐き出してくれるコマンドオプションを見つけたので、</p> <p>https://vuepress.vuejs.org/api/cli.html#eject</p> <p><code>theme-blog</code>は削除して<code>plugin-blog</code>用のファイルやコードをデフォルトテーマに足していく形にする。</p> <h2 id="コンポーネント"><a href="#コンポーネント" class="header-anchor">#</a> コンポーネント</h2> <p>ここからは見通しもよく安心感があった。
+基本的に、<code>plugin-blog</code>用の<code>IndexPost</code>と<code>Post</code>を作って動くようにしただけ。
+<code>stylus</code>って使ったことなかったけど、フレームワーク使わずにCSS作るなら
+こういうまとめ方もありだなと勉強になった。</p> <p>https://stylus-lang.com/docs/bifs.html</p> <h2 id="まとめ"><a href="#まとめ" class="header-anchor">#</a> まとめ</h2> <p>時間かかった割には、デザイン適当だし、<code>/tags/</code>とか404だし、変換されないmdあるし、
+prev/nextがsidebar依存で自動で作れなかったりするけど、
+文字検索が労せずできたし、テーマの編集は楽そうだし、
+<code>vuepress</code>選択してよかった気がします。</p></div> <footer><!----></footer></article></div><div class="global-ui"></div></div><!--after-vue-ssr-outlet-->
+    <!--before-scripts--><script src="/blog/assets/js/app.956a045b.js" defer></script><script src="/blog/assets/js/7.b4eebdb2.js" defer></script><script src="/blog/assets/js/1.b443d49a.js" defer></script><script src="/blog/assets/js/16.5ca0dc4d.js" defer></script><!--after-scripts-->
+  </body>
+</html>

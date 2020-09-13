@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dotfiles分割 | 4ki2の開発メモ</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="開発環境やら趣味のコードを片付け中。">
+    <!--before-resource-hints--><link rel="preload" href="/blog/assets/css/0.styles.2e123729.css" as="style"><link rel="preload" href="/blog/assets/js/app.956a045b.js" as="script"><link rel="preload" href="/blog/assets/js/7.b4eebdb2.js" as="script"><link rel="preload" href="/blog/assets/js/1.b443d49a.js" as="script"><link rel="preload" href="/blog/assets/js/11.e3a6f9cc.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.37c1fd7c.js"><link rel="prefetch" href="/blog/assets/js/12.34d84a83.js"><link rel="prefetch" href="/blog/assets/js/13.5ed170db.js"><link rel="prefetch" href="/blog/assets/js/14.38ce3122.js"><link rel="prefetch" href="/blog/assets/js/15.7297c6c6.js"><link rel="prefetch" href="/blog/assets/js/16.5ca0dc4d.js"><link rel="prefetch" href="/blog/assets/js/2.70a86519.js"><link rel="prefetch" href="/blog/assets/js/5.cb2eb1f2.js"><link rel="prefetch" href="/blog/assets/js/6.dc8a8231.js"><link rel="prefetch" href="/blog/assets/js/8.bb558b5c.js"><link rel="prefetch" href="/blog/assets/js/9.a974e01d.js"><link rel="prefetch" href="/blog/assets/js/vuejs-paginate.3571fb33.js"><!--after-resource-hints-->
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.2e123729.css">
+  </head>
+  <body>
+    <!--before-vue-ssr-outlet--><div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">4ki2の開発メモ</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        dotfiles分割
+      </h1> <div class="post-meta"><!----> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2016-08-12T09:17:32.000Z">
+      2016年08月12日 06:17:32
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-36165b9c><a href="/blog/tag/shell" data-v-36165b9c><span data-v-36165b9c>shell</span></a></li><li class="post-tag" data-v-36165b9c><a href="/blog/tag/github" data-v-36165b9c><span data-v-36165b9c>github</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><p>あれこれ片付けたい。</p> <ul><li>dotfilesの整理
+<ul><li>[ ] zshrc見直し</li> <li>[ ] vimrc見直し</li> <li>[ ] tmux見直し</li></ul></li> <li>github pagesの活用
+<ul><li>[x] UI改修</li></ul></li> <li>ローカル掃除
+<ul><li>[ ] gistへ退避</li></ul></li></ul> <h2 id="dotfiles"><a href="#dotfiles" class="header-anchor">#</a> dotfiles</h2> <p>分割した。見通し良くなって嬉しい。
+中身の見直しはやっぱりvimからだろうか？
+うまく使えてない機能とかあるし。
+neovimは敷居高い気がするので先送りする予定。</p> <h2 id="gist"><a href="#gist" class="header-anchor">#</a> gist</h2> <p>ローカルの散文的なのはgistに投げ込む方針にした。基本的にpublicの予定。</p> <p>https://github.com/defunkt/gist</p> <p>このアカウントで初めてgist開いたら、知らないファイルがあってちょっとびっくり。
+fiddleとeventmachineで遊んでた時にqiitaに投稿したコードの模様。</p> <h2 id="サイトの掃除"><a href="#サイトの掃除" class="header-anchor">#</a> サイトの掃除</h2> <p>awsやherokuのサイトはこの1年でほぼ整理したというかクローズしたのでやることはあまりなかった。
+herokuからgooleサイトへ移したサイトのドメイン名AレコードがS3だったのを失念しててS3から削除してたのを修正した。</p> <p>http://hacknote.jp/archives/17094/</p></div> <footer><div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/2016/08/11/_1/" class="prev">
+        jekyllを使ってみる
+      </a></span> <span class="next"><a href="/blog/2016/08/13/_1/">
+        Material Design Liteを使ってみた
+      </a>
+      →
+    </span></p></div></footer></article></div><div class="global-ui"></div></div><!--after-vue-ssr-outlet-->
+    <!--before-scripts--><script src="/blog/assets/js/app.956a045b.js" defer></script><script src="/blog/assets/js/7.b4eebdb2.js" defer></script><script src="/blog/assets/js/1.b443d49a.js" defer></script><script src="/blog/assets/js/11.e3a6f9cc.js" defer></script><!--after-scripts-->
+  </body>
+</html>
