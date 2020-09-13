@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "4ki2's blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "vuepress build src --temp .tmp/ --no-cache --dest docs",
+    "dev": "vuepress dev src --no-clear-screen",
+    "copy-theme": "vuepress eject src",
+    "create-post": "echo \"---\ndate: $(date '+%F %T %:z')\" > src/_posts/$(date '+%F')-1.md",
+    "info": "vuepress info src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4ki2/blog.git"
+  },
+  "author": "4ki2",
+  "license": "ISC",
+  "homepage": "https://4ki2.github.io/blog",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.4",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "moment": "^2.27.0",
+    "vue-feather-icons": "^5.1.0",
+    "vuepress": "^1.5.4",
+    "vuepress-plugin-smooth-scroll": "0.0.10"
+  }
+}
