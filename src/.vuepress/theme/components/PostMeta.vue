@@ -47,7 +47,7 @@ export default {
   },
   computed: {
     resolvedDate() {
-      return moment(this.date).format('YYYY年MM月DD日 hh:mm:ss')
+      return moment(this.date).format('YYYY年MM月DD日 HH:mm:ss')
     },
     resolvedTags() {
       if (!this.tags || Array.isArray(this.tags)) return this.tags

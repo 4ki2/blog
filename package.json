@@ -4,10 +4,9 @@
   "description": "4ki2's blog",
   "main": "index.js",
   "scripts": {
-    "build": "vuepress build src --temp .tmp/ --no-cache --dest docs",
-    "dev": "vuepress dev src --no-clear-screen",
+    "build": "vuepress build src --temp .tmp/ --dest docs",
+    "dev": "vuepress dev src --temp .tmp/ --no-cache --no-clear-screen --debug",
     "copy-theme": "vuepress eject src",
-    "create-post": "echo \"---\ndate: $(date '+%F %T %:z')\" > src/_posts/$(date '+%F')-1.md",
     "info": "vuepress info src"
   },
   "repository": {

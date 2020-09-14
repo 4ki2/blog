@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSSフレームワークについて | 4ki2の開発メモ</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="blogデザイン変更の前に軽く調べてみた。">
+    <!--before-resource-hints--><link rel="preload" href="/blog/assets/css/0.styles.2e123729.css" as="style"><link rel="preload" href="/blog/assets/js/app.835cf001.js" as="script"><link rel="preload" href="/blog/assets/js/7.4f20d4cb.js" as="script"><link rel="preload" href="/blog/assets/js/1.b443d49a.js" as="script"><link rel="preload" href="/blog/assets/js/17.07c5c537.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.37c1fd7c.js"><link rel="prefetch" href="/blog/assets/js/11.e3a6f9cc.js"><link rel="prefetch" href="/blog/assets/js/12.34d84a83.js"><link rel="prefetch" href="/blog/assets/js/13.5ed170db.js"><link rel="prefetch" href="/blog/assets/js/14.38ce3122.js"><link rel="prefetch" href="/blog/assets/js/15.7297c6c6.js"><link rel="prefetch" href="/blog/assets/js/16.5ca0dc4d.js"><link rel="prefetch" href="/blog/assets/js/2.70a86519.js"><link rel="prefetch" href="/blog/assets/js/5.cb2eb1f2.js"><link rel="prefetch" href="/blog/assets/js/6.dc8a8231.js"><link rel="prefetch" href="/blog/assets/js/8.6903053e.js"><link rel="prefetch" href="/blog/assets/js/9.a974e01d.js"><link rel="prefetch" href="/blog/assets/js/vuejs-paginate.3571fb33.js"><!--after-resource-hints-->
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.2e123729.css">
+  </head>
+  <body>
+    <!--before-vue-ssr-outlet--><div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">4ki2の開発メモ</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        CSSフレームワークについて
+      </h1> <div class="post-meta"><!----> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-09-14T05:02:53.000Z">
+      2020年09月14日 14:02:53
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-36165b9c><a href="/blog/tag/BULMA" data-v-36165b9c><span data-v-36165b9c>BULMA</span></a></li><li class="post-tag" data-v-36165b9c><a href="/blog/tag/tailwindcss" data-v-36165b9c><span data-v-36165b9c>tailwindcss</span></a></li><li class="post-tag" data-v-36165b9c><a href="/blog/tag/purecss" data-v-36165b9c><span data-v-36165b9c>purecss</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="前提"><a href="#前提" class="header-anchor">#</a> 前提</h2> <ul><li>ブログの趣旨は自分用の開発メモなのでフィードバックは意識しない</li> <li>PCでの開発中にメモする用途なのでSPも意識しない</li> <li>1から作る自分用だがコード量は減らしたい</li></ul> <h2 id="調査"><a href="#調査" class="header-anchor">#</a> 調査</h2> <p>最近までメンテされていてjavascriptが組み込まれていないフレームワークから選ぶ</p> <ul><li><a href="https://bulma.io/documentation/components/" target="_blank" rel="noopener noreferrer">BULMA<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://tailwindcss.com/components" target="_blank" rel="noopener noreferrer">tailwind<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://purecss.io/" target="_blank" rel="noopener noreferrer">Pure.css<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p>tailwindはcssを一定の粒度でclass化しただけのものなのに人気がありそう？
+コンポーネントはclassの組み合わせ例が載っているだけなので、
+好きにしてって事だから、
+テーマやコンポーネントセットが既にゴロゴロしてるかと思いきや、
+あまりなかった。実は人気ないとか？</p> <p>https://tailwindcomponents.com/</p> <p>なんてサイトがあったが、探して選ぶ時間が無駄な気がした。
+vscodeのスニペットもあるから、
+高い自由度のままあれこれ試せるコンセプトは分かるけど、
+できあがったコードの膨大さを見て後悔しそう。
+プリプロセッサ前提に先にテーマ化しておけば後々楽そうではあるけど、
+やる気にならない。</p> <p>BULMAはtailwindを大雑把にした感じで、
+コンポーネントもシンプルに書けるものが用意されている。
+Pureは相変わらずミニマムなので物足りない。</p> <p>別途、googleの<code>Material Design Lite</code>ってどうなったのかと調べてみたけど、
+別プロジェクトに移行してて、スマホに注力してるけど、WEB用は味気ない感じだった。</p> <p>https://material-components.github.io/material-components-web-components/demos/index.html</p> <p>って感じなので、消去法でBULMAを採用することになりそう。</p></div> <footer><div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/2020/09/13/_1/" class="prev">
+        hugoからvuepressへ
+      </a></span> <!----></p></div></footer></article></div><div class="global-ui"></div></div><!--after-vue-ssr-outlet-->
+    <!--before-scripts--><script src="/blog/assets/js/app.835cf001.js" defer></script><script src="/blog/assets/js/7.4f20d4cb.js" defer></script><script src="/blog/assets/js/1.b443d49a.js" defer></script><script src="/blog/assets/js/17.07c5c537.js" defer></script><!--after-scripts-->
+  </body>
+</html>
