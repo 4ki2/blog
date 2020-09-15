@@ -1,30 +1,29 @@
 <template>
   <div class="theme-container">
-    <div class="theme-default-content">
-      <h1>404</h1>
-
-      <blockquote>{{ getMsg() }}</blockquote>
-
-      <RouterLink to="/">
-        Take me home.
-      </RouterLink>
-    </div>
+    <Navbar />
+    <section class="theme-default-content">
+      <div class="error-content">
+        <h1>404</h1>
+        <blockquote>存在しないページです。</blockquote>
+        <RouterLink to="/">トップへ戻る</RouterLink>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-const msgs = [
-  `There's nothing here.`,
-  `How did we get here?`,
-  `That's a Four-Oh-Four.`,
-  `Looks like we've got some broken links.`
-]
+import Navbar from '@theme/components/Navbar.vue'
 
 export default {
-  methods: {
-    getMsg () {
-      return msgs[Math.floor(Math.random() * msgs.length)]
-    }
-  }
+  components: { Navbar }
 }
 </script>
+
+<style lang="stylus">
+@require '../styles/wrapper.styl'
+.error-content
+  @extend $wrapper
+  background-color #FFF
+  h1
+    margin-top 0
+</style>

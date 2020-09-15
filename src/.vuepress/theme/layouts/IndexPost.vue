@@ -1,8 +1,8 @@
 <template>
   <div class="theme-container" >
     <Navbar />
-    <div
-      class="ui-posts"
+    <section
+      class="theme-default-content ui-posts"
       itemscope
       itemtype="http://schema.org/Blog">
       <article
@@ -60,11 +60,11 @@
           </div>
         </footer>
       </article>
-    </div>
-    <component
-      :is="paginationComponent"
-      v-if="$pagination.length > 1 && paginationComponent"
-    ></component>
+      <component
+        :is="paginationComponent"
+        v-if="$pagination.length > 1 && paginationComponent"
+      ></component>
+    </section>
   </div>
 </template>
 
@@ -109,11 +109,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../styles/wrapper.styl'
-.ui-posts
-  @extend $wrapper
-  margin-top 45px
-
 .ui-post
   background-color: #FFF
   padding 25px
@@ -125,8 +120,7 @@ export default {
     margin-bottom 0px
 
 .ui-post-title
-  font-family PT Serif, Serif
-  font-size 28px
+  font-size 1.4em
   border-bottom 0
 
   a
@@ -139,15 +133,13 @@ export default {
       text-decoration underline
 
 .ui-post-summary
-  font-size 14px
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
+  font-size 1em
 
 .ui-post-meta
   display inline-flex
   align-items center
-  font-size 12px
-  line-height 12px
+  font-size 0.9em
+  line-height 1em
 
   &:not(:last-child)
     margin-bottom 3px
@@ -164,24 +156,14 @@ export default {
     &:not(:last-child)
       margin-bottom 10px
 
-.ui-post-author
-  color rgba($darkTextColor, 0.84)
-  font-weight 400
-
-.ui-post-date
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
-
-.ui-post-tag
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
-
   a
     color inherit
-    font-weight 200
     text-decoration none
     margin-right 5px
 
     &:hover
       color $accentColor
+.pagination
+  margin 20px auto
+  display table
 </style>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "vuepress build src --temp .tmp/ --dest docs",
-    "dev": "vuepress dev src --temp .tmp/ --no-cache --no-clear-screen --debug",
+    "dev": "vuepress dev src --temp .tmp/ --port 12345 --no-cache --no-clear-screen",
     "copy-theme": "vuepress eject src",
     "info": "vuepress info src"
   },

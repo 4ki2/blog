@@ -146,10 +146,7 @@ function flatten (items, res) {
 </script>
 
 <style lang="stylus">
-@require '../styles/wrapper.styl'
-
 .page-nav
-  @extend $wrapper
   padding-top 1rem
   padding-bottom 0
   .inner

@@ -1,7 +1,12 @@
 module.exports = {
   base: '/blog/',
-  title: "4ki2の開発メモ",
-  description: "WEB開発系のメモです",
+  locales:{
+    '/': {
+      lang: 'ja',
+      title: "4ki2の開発メモ",
+      description: "WEB開発系のメモです"
+    }
+  },
   themeConfig: {
     sidebar: false,
     smoothScroll: true
@@ -14,7 +19,13 @@ module.exports = {
       directories: [{
         id: 'post',
         dirname: '_posts',
-        path: '/'
+        path: '/',
+        pagination: {
+          layout: 'IndexPost',
+          nextText: '古いメモ',
+          prevText: '新しいメモ',
+          lengthPerPage: 10
+        }
       }]
     }],
     [ '@vuepress/search', {
