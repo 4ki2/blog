@@ -6,12 +6,13 @@
   "scripts": {
     "build": "vuepress build src --temp .tmp/ --dest docs",
     "dev": "vuepress dev src --temp .tmp/ --port 12345 --no-cache --no-clear-screen",
+    "deb": "vuepress dev src --temp .tmp/ --port 12345 --no-cache --no-clear-screen --debug",
     "copy-theme": "vuepress eject src",
     "info": "vuepress info src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4ki2/blog.git"
+    "url": "https://github.com/4ki2/blog.git"
   },
   "author": "4ki2",
   "license": "ISC",
@@ -19,7 +20,7 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.4",
     "@vuepress/plugin-blog": "^1.9.2",
-    "moment": "^2.27.0",
+    "moment": "^2.29.0",
     "vue-feather-icons": "^5.1.0",
     "vuepress": "^1.5.4",
     "vuepress-plugin-smooth-scroll": "0.0.10"

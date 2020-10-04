@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mailcatcher in CentOS | 4ki2の開発メモ</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="環境構築メモ">
+    <!--before-resource-hints--><link rel="preload" href="/blog/assets/css/0.styles.4234e20a.css" as="style"><link rel="preload" href="/blog/assets/js/app.1732ff6a.js" as="script"><link rel="preload" href="/blog/assets/js/8.ff70c7f1.js" as="script"><link rel="preload" href="/blog/assets/js/1.17d514ea.js" as="script"><link rel="preload" href="/blog/assets/js/21.69cf6996.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.ac023e3c.js"><link rel="prefetch" href="/blog/assets/js/11.f0e7bc87.js"><link rel="prefetch" href="/blog/assets/js/12.4ba18f88.js"><link rel="prefetch" href="/blog/assets/js/13.8e995287.js"><link rel="prefetch" href="/blog/assets/js/14.42f51fda.js"><link rel="prefetch" href="/blog/assets/js/15.5b03ce7a.js"><link rel="prefetch" href="/blog/assets/js/16.70ed7e99.js"><link rel="prefetch" href="/blog/assets/js/17.1329730d.js"><link rel="prefetch" href="/blog/assets/js/18.389cce73.js"><link rel="prefetch" href="/blog/assets/js/19.356b99cd.js"><link rel="prefetch" href="/blog/assets/js/2.09a57dd6.js"><link rel="prefetch" href="/blog/assets/js/20.b7fcfb27.js"><link rel="prefetch" href="/blog/assets/js/22.02b6f667.js"><link rel="prefetch" href="/blog/assets/js/23.08f21074.js"><link rel="prefetch" href="/blog/assets/js/24.3cd287e6.js"><link rel="prefetch" href="/blog/assets/js/25.93c29d9c.js"><link rel="prefetch" href="/blog/assets/js/26.ebbcc2ce.js"><link rel="prefetch" href="/blog/assets/js/27.beb86432.js"><link rel="prefetch" href="/blog/assets/js/28.9e406453.js"><link rel="prefetch" href="/blog/assets/js/29.1e734826.js"><link rel="prefetch" href="/blog/assets/js/30.44e7494a.js"><link rel="prefetch" href="/blog/assets/js/31.a05ff7e5.js"><link rel="prefetch" href="/blog/assets/js/32.940247b6.js"><link rel="prefetch" href="/blog/assets/js/33.e3f0b071.js"><link rel="prefetch" href="/blog/assets/js/34.a87576bc.js"><link rel="prefetch" href="/blog/assets/js/35.928c245d.js"><link rel="prefetch" href="/blog/assets/js/36.67a28d8b.js"><link rel="prefetch" href="/blog/assets/js/37.39758ead.js"><link rel="prefetch" href="/blog/assets/js/38.5789d55d.js"><link rel="prefetch" href="/blog/assets/js/39.dfd1eca7.js"><link rel="prefetch" href="/blog/assets/js/40.eedda9d1.js"><link rel="prefetch" href="/blog/assets/js/41.14c56e32.js"><link rel="prefetch" href="/blog/assets/js/42.9f2f7288.js"><link rel="prefetch" href="/blog/assets/js/43.aafad6fc.js"><link rel="prefetch" href="/blog/assets/js/44.03fb3f60.js"><link rel="prefetch" href="/blog/assets/js/45.ba1a9e03.js"><link rel="prefetch" href="/blog/assets/js/46.9b72002d.js"><link rel="prefetch" href="/blog/assets/js/47.6de6bd5a.js"><link rel="prefetch" href="/blog/assets/js/48.25e29e76.js"><link rel="prefetch" href="/blog/assets/js/49.99a0035b.js"><link rel="prefetch" href="/blog/assets/js/5.7a2b7aea.js"><link rel="prefetch" href="/blog/assets/js/50.546b79e7.js"><link rel="prefetch" href="/blog/assets/js/51.b779ff1e.js"><link rel="prefetch" href="/blog/assets/js/52.21b8eb78.js"><link rel="prefetch" href="/blog/assets/js/53.eb12b6b6.js"><link rel="prefetch" href="/blog/assets/js/54.83a71c83.js"><link rel="prefetch" href="/blog/assets/js/55.fed20637.js"><link rel="prefetch" href="/blog/assets/js/56.18c5ad2a.js"><link rel="prefetch" href="/blog/assets/js/57.d0baaf58.js"><link rel="prefetch" href="/blog/assets/js/58.7280b16f.js"><link rel="prefetch" href="/blog/assets/js/59.601e973d.js"><link rel="prefetch" href="/blog/assets/js/6.00c1f19d.js"><link rel="prefetch" href="/blog/assets/js/60.bd672dfd.js"><link rel="prefetch" href="/blog/assets/js/61.ae3a323b.js"><link rel="prefetch" href="/blog/assets/js/62.3358ff61.js"><link rel="prefetch" href="/blog/assets/js/63.d5d443ec.js"><link rel="prefetch" href="/blog/assets/js/64.22dfe147.js"><link rel="prefetch" href="/blog/assets/js/65.0b6baae8.js"><link rel="prefetch" href="/blog/assets/js/66.ab14b797.js"><link rel="prefetch" href="/blog/assets/js/67.af207943.js"><link rel="prefetch" href="/blog/assets/js/68.7f3ece1e.js"><link rel="prefetch" href="/blog/assets/js/69.28a3c8b2.js"><link rel="prefetch" href="/blog/assets/js/7.8f723f55.js"><link rel="prefetch" href="/blog/assets/js/70.6d7ec5b5.js"><link rel="prefetch" href="/blog/assets/js/71.3e27ee35.js"><link rel="prefetch" href="/blog/assets/js/72.fa578124.js"><link rel="prefetch" href="/blog/assets/js/73.1bdecc95.js"><link rel="prefetch" href="/blog/assets/js/74.b8821f26.js"><link rel="prefetch" href="/blog/assets/js/75.ccf1433f.js"><link rel="prefetch" href="/blog/assets/js/76.dc9112c2.js"><link rel="prefetch" href="/blog/assets/js/9.4e5971b3.js"><link rel="prefetch" href="/blog/assets/js/vuejs-paginate.558a0737.js"><!--after-resource-hints-->
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.4234e20a.css">
+  </head>
+  <body>
+    <!--before-vue-ssr-outlet--><div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">4ki2の開発メモ</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <section class="theme-default-content"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+          mailcatcher in CentOS
+        </h1> <div class="post-meta"><!----> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2018-04-10T11:00:00.000Z">
+      2018年04月10日 20:00:00
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-36165b9c><a href="/blog/tag/CentOS" data-v-36165b9c><span data-v-36165b9c>CentOS</span></a></li><li class="post-tag" data-v-36165b9c><a href="/blog/tag/mailcatcher" data-v-36165b9c><span data-v-36165b9c>mailcatcher</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><p>ruby 2.5.1/2.4.4/2.3.7 でインストール失敗。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>compiling binder.cpp
+cc1plus: 警告: command line option &quot;-Wdeclaration-after-statement&quot; is valid for C/ObjC but not for C++
+cc1plus: error: unrecognized command line option &quot;-Wshorten-64-to-32&quot;
+cc1plus: 警告: command line option &quot;-Wimplicit-function-declaration&quot; is valid for C/ObjC but not for C++
+cc1plus: error: unrecognized command line option &quot;-Wdivision-by-zero&quot;
+cc1plus: error: unrecognized command line option &quot;-Wextra-tokens&quot;
+make: *** [binder.o] エラー 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>ローカルの設定
+irb(main):001:0&gt; RbConfig::CONFIG['CC']
+=&gt; &quot;clang&quot;
+irb(main):002:0&gt; RbConfig::CONFIG['CPP']
+=&gt; &quot;clang -E&quot;
+irb(main):003:0&gt; RbConfig::CONFIG['CXX']
+=&gt; &quot;g++&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><a href="https://github.com/eventmachine/eventmachine/issues/825" target="_blank" rel="noopener noreferrer">eventmachineでこけてて<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、
+<a href="https://qiita.com/Tats_U_/items/8c13988f9d3723eb4243" target="_blank" rel="noopener noreferrer">原因はgccが古いかも<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>ということ。
+ここを参考にsclなるツールを導入してみる。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> centos-release-scl
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>これだけでcentos-sclo系のリポジトリが有効になる。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum info devtoolset-7-gcc<span class="token operator">|</span><span class="token function">grep</span> GCC
+要約                <span class="token builtin class-name">:</span> GCC version <span class="token number">7</span>
+yum info devtoolset-6-gcc<span class="token operator">|</span><span class="token function">grep</span> GCC
+要約                <span class="token builtin class-name">:</span> GCC version <span class="token number">6</span>
+yum info devtoolset-5-gcc<span class="token operator">|</span><span class="token function">grep</span> GCC
+エラー: 表示するパッケージはありません
+yum info devtoolset-4-gcc<span class="token operator">|</span><span class="token function">grep</span> GCC
+要約                <span class="token builtin class-name">:</span> GCC version <span class="token number">5</span>
+yum info devtoolset-3-gcc<span class="token operator">|</span><span class="token function">grep</span> GCC
+要約                <span class="token builtin class-name">:</span> GCC version <span class="token number">4.9</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>devtoolのバージョンはgccのバージョンに依存していると見ていいかも。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>scl enable devtoolset-3 zsh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>インストールしたパッケージを使うって宣言しないと有効にならない。
+ログインが切れれば無効になる。
+今回は次の２つをインストールした。</p> <ul><li>devtoolset-3-gcc</li> <li>devtoolset-3-gcc-c++</li></ul> <p>sclはenv系みたいに切り替えできて知れたのはよかったんだけど、
+mailcatcherのエラー(eventmachineがコンパイルできない)については
+<code>CC=clang</code>でrubyをインストール(<code>rbenv install</code>)してしまったことが原因だった。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>irb(main):001:0&gt; RbConfig::CONFIG['CC']
+=&gt; &quot;gcc&quot;
+irb(main):002:0&gt; RbConfig::CONFIG['CPP']
+=&gt; &quot;gcc -E&quot;
+irb(main):003:0&gt; RbConfig::CONFIG['CXX']
+=&gt; &quot;g++&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>このCC(CPPは<code>$(CC) -E</code>固定)がclangになっていたため、
+clangでコンパイルするがMacのgccのオプションがなくエラーとなっていた。
+gccはdevtoolsetでアップグレードできるが、
+clangはソースからビルドするしかなくて、
+結局rbenvを削除してcloneし直して、
+centosデフォルトの<code>gcc4.4</code>でコンパイルできた。
+アプリがmailcatcherでメール送信する際に、
+catchmailを実行するが、
+/root直下にrbenvがあるとnginxから実行できないため、
+/optの下のクローンしたリポジトリパスをRBENV_ROOTにして、
+全ユーザーでrubyを使えるようにした。</p></div> <footer><!----></footer></article></section></div><div class="global-ui"></div></div><!--after-vue-ssr-outlet-->
+    <!--before-scripts--><script src="/blog/assets/js/app.1732ff6a.js" defer></script><script src="/blog/assets/js/8.ff70c7f1.js" defer></script><script src="/blog/assets/js/1.17d514ea.js" defer></script><script src="/blog/assets/js/21.69cf6996.js" defer></script><!--after-scripts-->
+  </body>
+</html>
